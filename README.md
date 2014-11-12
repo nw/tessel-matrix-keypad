@@ -73,7 +73,7 @@ var keypad = new Keypad(options);
   * `row`: row pins are pulled high to correspond with columns.
   * `col`: column pins are pulled high to correspond with row pins.
   * `both`: both rows and column are scanned. This helps to solve for ghosting with multiple keys. It is also slower.
-* `poll`: how often to poll for key updates in ms. Relative to last poll. __default: `false`
+* `poll`: how often to poll for key updates in ms. Relative to last poll. __default__: `false`
 
 
 ### API methods
