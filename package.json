@@ -1,0 +1,14 @@
+{
+  "name": "tessel-matrix-keypad",
+  "version": "0.0.1",
+  "description": "tessel matrix keyboard interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan White <nw@nwhite.net>",
+  "license": "ISC",
+  "hardware": {
+    "./README.md": false
+  }
+}
