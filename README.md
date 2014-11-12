@@ -11,7 +11,7 @@ You can purchase such keypads [here](http://www.electrodragon.com/product/4x4-ma
 
 A really good write up on [how key matrices work](http://pcbheaven.com/wikipages/How_Key_Matrices_Works/)
 
-Or inspiration for this library, the [arduino matrix keypad how-to](http://playground.arduino.cc/Main/KeypadTutorial)
+The [arduino matrix keypad how-to](http://playground.arduino.cc/Main/KeypadTutorial) provides inspiration for this library.
 
 ### Install
 
@@ -24,10 +24,11 @@ Or inspiration for this library, the [arduino matrix keypad how-to](http://playg
 ```js
 
   var tessel = require('tessel')
+    , Keypad = require('tessel-matrix-keypad');
     , gpio = tessel.port['GPIO'].pin //shortcut for referencing Tessel pins
     , modD = tessel.port['D'].pin;
 
-  new KeyPad({
+  var keypad = new Keypad({
     keys: [
       ['1', '2', '3', 'A'],
       ['4', '5', '6', 'B'],
@@ -39,10 +40,19 @@ Or inspiration for this library, the [arduino matrix keypad how-to](http://playg
   , poll: false // number sets for auto polling (integer)
   });
 
+  keypad.on('change', function(key, val){
+
+  });
+
+  keypad.on('keydown', function(key){
+
+  });
+
+  keypad.on('keyup', function(key){
+
+  });
+
 ```
-
-### Features
-
 
 ### Create keypad instance
 
